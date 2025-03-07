@@ -1,0 +1,87 @@
+body{
+  background-color: rgba(129, 78, 129, 0.845);
+  font-family: "Inter";
+}
+.container{
+  background-color: white;
+  width: 510px;
+  min-height: 200px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px 30px;
+  border-radius: 15px;
+}
+.input-note{
+  text-align: center;
+  margin-bottom: 25px;
+}
+h3{
+  font-size: 1.5rem;
+}
+#notes-content{
+  background-color: rgba(227, 226, 226, 0.765);
+  border: none;
+  width: 410px;
+  height: 49px;
+  font-size: 18px;
+  padding: 0 23px;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  outline:none;
+}
+#add-note{
+  width: 130px;
+  height: 49px;
+  border-radius: 50px;
+  margin-left: -90px;
+  border: none;
+  background-color: tomato;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  outline:none;
+}
+/*class for list of notes*/
+ul li{
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 2px 50px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/uncheck.png);
+  background-size: cover;
+  background-position: center;
+  left:8px;
+  top:9px;
+}
+ul li.checked{
+  text-decoration: line-through;
+  color:#555;
+}
+ul li.checked::before{
+  background-image: url(images/check.png);
+}
+ul li span{
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size:22px;
+  text-align: center;
+  top:8px;
+  color:#555;
+
+  border-radius: 50%;
+}
+ul li span:hover{
+  background-color: #55555563;
+}
